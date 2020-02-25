@@ -1,0 +1,38 @@
+/******************************************************************************
+* Assignment:  lab 06
+* Lab Section: Tuesday, 11:30, SC 262
+* Description:
+* Programmers: Patrick Egan egan17@purdue.edu
+*              Robbie Branaman rbranama@purdue.edu
+*              Stephen Iwu iwus@purdue.edu
+******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+// FUNCTION DECLARATIONS
+  int findTotalDigits(int number);
+  int numberSign(int number);
+
+int main ()
+{
+// VARIABLE INITIALIZATION
+  int integer;
+  int digits;
+//  int numSign;
+
+// USER INPUT
+  printf("Enter integer in range [-99999, 99999] -> ");
+  scanf("%d", &integer);
+
+// FUNCTION CALLS
+  digits = findTotalDigits(integer);
+  numberSign(integer);
+
+// OUTPUT
+  printf("%d\n", digits);
+
+  return 0;
+}
+
+
+/******************************************************************************
